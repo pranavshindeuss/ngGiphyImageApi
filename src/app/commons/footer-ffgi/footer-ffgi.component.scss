@@ -1,0 +1,94 @@
+$footer_dark_bg: #363b3e;
+$footer_dark_heading_color: #fff;
+$footer_dark_link_color: #8f989d;
+$footer_light_bg: #fff;
+$footer_light_link_color: #8a949a;
+$footer_light_socialLink_color: #d4d8db;
+$signupBox_input_border: 3px solid #484e53;
+
+footer {
+  .footer_dark {
+    background: $footer_dark_bg; padding: 100px 70px;
+
+    h3 { font-size: 25px; color: white; margin-bottom: 40px; line-height: 35px; }
+
+    .sectionRow {
+      display: flex;
+
+      .sectionCol1 {
+        flex-basis: 47%;
+
+        .sighupBox {
+          width: 380px;
+
+          input, button { height: 58px; }
+
+          input {
+            padding: 10px; width: 100%; font-size: 20px; border-radius: 8px;
+            background: transparent; border: $signupBox_input_border;
+            margin-bottom: 20px; color: white;
+          }
+          button {
+            padding: 10px; font-size: 24px; border-radius: 8px;
+            width: 100%; border: none; background: #2c88b5;
+            color: white; font-weight: 600;
+          }
+        }
+
+
+      }
+      .sectionCol2 {
+        flex-basis: 53%;
+
+        ul.categories {
+          display: flex; flex-flow: column; max-height: 160px; flex-wrap: wrap;
+
+          li {
+            width: 25%; display: inline-block; margin-bottom: 15px;
+
+            a {
+              color: $footer_dark_link_color; font-size: 14px; display: block;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer_light {
+    background: $footer_light_bg; font-size: 16px; padding: 40px 70px 65px 70px;
+    .segment { display: flex; justify-content: center; align-items: center; }
+
+    ul.textLinks {
+      li {
+        list-style-type: none; display: inline-block;
+
+        a { color: $footer_light_link_color; font-size: 1.6rem; text-decoration: none; }
+      }
+      li:after {
+        content: '/'; padding: 0 8px; font-size: 16px; color: $footer_light_link_color;
+      }
+      li:last-of-type:after {
+        content: '';
+      }
+    }
+
+    ul.socialLinks {
+      margin-left: auto;
+
+      li {
+        display: inline-block;
+
+        a {
+          width: 43px; height: 43px; text-align: center; display: block;
+          vertical-align: middle; border-radius: 100%; font-size: 20px;
+          line-height: 40px; border: 3px solid $footer_light_socialLink_color;
+          margin-left: 10px; color: $footer_light_socialLink_color;
+        }
+      }
+    }
+
+    p { font-size: 1.3rem; color: #d4d8db; text-align: left; margin: 20px 0 0 0; }
+  }
+}

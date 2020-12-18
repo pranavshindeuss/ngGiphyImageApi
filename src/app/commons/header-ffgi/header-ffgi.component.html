@@ -1,0 +1,19 @@
+<header class="headerGradient">
+  <h1>Gif Search</h1>
+  <div class="searchAndFilter">
+    <input type="text" #searchField placeholder="What are you looking for">
+    <div class="custom_select">
+      <select>
+        <option value="0">Show All</option>
+        <option value="1">Sort Option 1</option>
+        <option value="2">Sort Option 2</option>
+        <option value="3">Sort Option 3</option>
+      </select>
+    </div>
+    <button (click)="searchGif(searchField.value)">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </div>
+  <h2>You can search any gif with our search</h2>
+  <p>Everything you need for your creative projects, websites, banners, presentations, magazines and advertising.</p>
+</header>

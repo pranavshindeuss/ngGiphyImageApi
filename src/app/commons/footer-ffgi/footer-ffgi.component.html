@@ -1,0 +1,41 @@
+<footer>
+  <section class="footer_dark">
+    <div class="sectionRow">
+      <div class="sectionCol1">
+        <div class="sighupBox">
+          <h3>Sign up <br>and get free content every week</h3>
+          <input type="text" placeholder="Enter your email">
+          <button>Sign Up</button>
+        </div>
+      </div>
+      <div class="sectionCol2">
+        <h3>Browse by categories</h3>
+        <ul class="categories">
+          <li *ngFor="let cat of categories"><a [href]="cat.slug">{{cat.category}}</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="footer_light">
+    <div class="segment">
+      <ul class="textLinks">
+        <li *ngFor="let page of pages"><a [href]="page.slug">{{page.title}}</a></li>
+      </ul>
+      <ul class="socialLinks">
+        <li>
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+        </li>
+      </ul>
+    </div>
+    <p>Copyright &copy; 2018 myCompany all rights reserved</p>
+  </section>
+</footer>

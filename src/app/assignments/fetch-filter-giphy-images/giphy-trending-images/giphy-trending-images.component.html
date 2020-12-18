@@ -1,0 +1,8 @@
+<section class="content">
+  <ul>
+    <li *ngFor="let gif of giphyImages">
+      <img [src]="gif.images.preview_gif.url" [width]="gif.images.preview_gif.width"
+      [height]="gif.images.preview_gif.height" [alt]="gif.images.preview_gif.title">
+    </li>
+  </ul>
+</section>

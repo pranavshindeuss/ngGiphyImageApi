@@ -1,0 +1,57 @@
+$header_bg_dark: rgba(179,84,0,1);
+$header_bg_light: rgba(254,109,0,0.83);
+header {
+  padding: 13.4rem 7rem 16rem 7rem; color: white; text-align: center;
+
+  h1 { font-size: 7.4rem; }
+  .searchAndFilter {
+    width: 688px; display: flex; margin: 80px auto 85px auto;
+
+    input {
+      height: 60px; width: 446px; border: none; border-radius: 8px 0 0 8px;
+      font-size: 20px; padding: 0 20px;
+    }
+    .custom_select {
+      display: inline-block; height: 60px; background: #e2eef4;
+      width: 160px; position: relative; padding-right: 15px;
+
+      select {
+        border: none; background: transparent; width: 100%;
+        height: 100%; font-size: 20px; padding-left: 15px; color: #a9bec8;
+
+        option { font-size: 20px; padding: 10px; }
+      }
+    }
+    .custom_select:after {
+      content: ''; border: 8px solid transparent;
+      border-top-color: #a9bec8;
+      position: absolute;
+      right: 15px;
+      top: 27px;
+    }
+    button {
+      width: 70px;
+    height: 60px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 25px;
+    border-radius: 0 8px 8px 0;
+    }
+  }
+  h2 { font-size: 32px; margin-bottom: 48px; }
+  p { font-size: 1.9rem; }
+}
+.headerGradient {
+  background: $header_bg_dark;
+background: -moz-linear-gradient(-45deg, $header_bg_dark 0%, $header_bg_light 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, $header_bg_dark),
+color-stop(100%, $header_bg_light));
+background: -webkit-linear-gradient(-45deg, $header_bg_dark 0%, $header_bg_light 100%);
+background: -o-linear-gradient(-45deg, $header_bg_dark 0%, $header_bg_light 100%);
+background: -ms-linear-gradient(-45deg, $header_bg_dark 0%, $header_bg_light 100%);
+background: linear-gradient(135deg, $header_bg_dark 0%, $header_bg_light 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b35400', endColorstr='#fe6d00', GradientType=1 );
+}
+
+button { cursor: pointer; }

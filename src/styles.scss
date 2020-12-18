@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+// Theme Colors
+$white: #fff;
+$black: #000;
+
+
+
+* {
+  margin: 0; padding: 0; font-family:'Myriad Pro Regular', Times, serif;
+  box-sizing: border-box; font-size: 10px;
+}
+:root {
+  font-size: 10px;
+}
+
+body { font-size: 1.6rem; }

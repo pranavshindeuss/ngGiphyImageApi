@@ -1,0 +1,20 @@
+ul {
+  line-height: 0;
+
+  -webkit-column-count: 3;
+  -webkit-column-gap: 10px;
+  -moz-column-count: 3;
+  -moz-column-gap: 10px;
+  column-count: 3;
+  column-gap: 10px;
+
+  li {
+    list-style-type: none; margin-bottom: 10px;
+
+    img { width: 100%; height: auto; display: block; }
+  }
+}
+
+.content {
+  padding: 100px 70px;
+}
