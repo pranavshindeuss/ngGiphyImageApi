@@ -1,0 +1,14 @@
+.navigatorManagement {
+  padding: 20px; width: 90%; margin: auto; background: #f1f1f1;
+
+  h1 { font-size: 3.6rem; color: tomato; }
+  p { font-size: 1.8rem; color: #333; }
+  a, a:active, a:hover, a:focus { text-decoration: none; color: #00bcd4; }
+  ol {
+    padding-left: 36px;
+
+    li {
+      font-size: 1.8rem; margin-bottom: 10px; padding: 10px 15px;
+    }
+  }
+}
