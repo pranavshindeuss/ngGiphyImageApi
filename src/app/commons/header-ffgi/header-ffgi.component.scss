@@ -5,11 +5,11 @@ header {
 
   h1 { font-size: 7.4rem; }
   .searchAndFilter {
-    width: 688px; display: flex; margin: 80px auto 85px auto;
+    width: 688px; display: flex; margin: 80px auto 85px auto; justify-content: center;
 
     input {
       height: 60px; width: 446px; border: none; border-radius: 8px 0 0 8px;
-      font-size: 20px; padding: 0 20px;
+      font-size: 2rem; padding: 0 20px;
     }
     .custom_select {
       display: inline-block; height: 60px; background: #e2eef4;
@@ -17,30 +17,54 @@ header {
 
       select {
         border: none; background: transparent; width: 100%;
-        height: 100%; font-size: 20px; padding-left: 15px; color: #a9bec8;
+        height: 100%; font-size: 2rem; padding-left: 15px; color: #a9bec8;
 
-        option { font-size: 20px; padding: 10px; }
+        option { font-size: 2rem; padding: 10px; }
       }
     }
     .custom_select:after {
-      content: ''; border: 8px solid transparent;
-      border-top-color: #a9bec8;
-      position: absolute;
-      right: 15px;
-      top: 27px;
+      content: ''; border: 8px solid transparent; border-top-color: #a9bec8;
+      position: absolute; right: 15px; top: 27px;
     }
     button {
-      width: 70px;
-    height: 60px;
-    border: none;
-    background: black;
-    color: white;
-    font-size: 25px;
-    border-radius: 0 8px 8px 0;
+      width: 70px; height: 60px; border: none; background: black;
+      color: white; font-size: 2.5rem; border-radius: 0 8px 8px 0;
+    }
+
+    @media screen and (max-width: 850px) {
+      width: 500px;
+
+      input { width: 324px; }
+      input, select, button, .custom_select { height: 50px; }
+      .custom_select:after { top: 22px; }
+    }
+
+    @media screen and (max-width: 675px) {
+      input, select, button, .custom_select, select option { height: 45px; font-size: 1.6rem !important; }
+      .custom_select:after { top: 19px; }
+      button { width: 55px; min-width: 45px; }
+      .custom_select { width: 125px; }
+      .searchAndFilter { margin: 45px auto; }
     }
   }
-  h2 { font-size: 32px; margin-bottom: 48px; }
+  h2 { font-size: 3.2rem; margin-bottom: 48px; }
   p { font-size: 1.9rem; }
+
+  @media screen and (max-width: 675px) {
+    padding: 50px 15px;
+    h1 { font-size: 5rem; }
+    h2 { font-size: 2.5rem; margin-bottom: 30px; }
+
+    .searchAndFilter { margin: 45px auto; }
+  }
+
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 567px) {
+    .searchAndFilter { width: 100%; }
+  }
 }
 .headerGradient {
   background: $header_bg_dark;
